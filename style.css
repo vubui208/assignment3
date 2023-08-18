@@ -1,0 +1,360 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+section > .container1 {
+  margin: auto;
+  margin-left: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* column-gap: 10px; */
+  /* padding: 30px 50px; */
+  margin-top: 20px;
+}
+.control-view .view-more,
+.control-view .less-more {
+  display: none;
+}
+
+#nav-bar {
+  text-align: center;
+}
+/* ẢNH VÀ TÊN */
+.banner {
+  position: relative;
+  text-align: center;
+}
+.text {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/*navigation bar  */
+.nav-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 150px 250px 150px 150px;
+  height: auto;
+  justify-content: center;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-collapse: collapse;
+  column-gap: 1px;
+}
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.nav-bar a {
+  display: flex;
+  border-left: 1px solid #ddd;
+
+  text-decoration: none;
+  color: black;
+
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#name {
+  font-weight: bold;
+  font-size: 20px;
+  align-self: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.name2 {
+  font-size: 11px;
+}
+/* debug */
+
+.nav-bar a:last-child {
+  border-right: 1px solid #ddd;
+}
+.container1 {
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+  /* margin-bottom: 20px; */
+}
+#target {
+  background-color: #f7f7f7;
+  justify-content: end;
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-right: 50px;
+  color: #83858a;
+}
+#target h1 {
+  color: black;
+}
+#personal-info {
+  background-color: #d3d3d3;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-left: 50px;
+  color: #83858a;
+}
+/* an thong tin ca nhan */
+#personal-info .info {
+  display: none;
+}
+#personal-info h1 {
+  color: black;
+}
+ul,
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+li:last-child {
+  margin-bottom: 100px;
+}
+/* KINH NGHIỆM */
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  text-align: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-top: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: start;
+}
+.kinhnghiem {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.idea {
+  grid-column: 1/-1;
+  line-height: 1.5;
+}
+.title {
+  grid-column: 1 /-3;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.icon-suitcase {
+  padding-top: 20px;
+  font-size: 30px;
+}
+.special {
+  margin-top: 30px;
+}
+/* HỌC VẤN */
+.hocvan {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.icon-pencil {
+  padding-top: 20px;
+  font-size: 30px;
+}
+/* Hoạt động */
+.hoatdong {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon-location {
+  padding-top: 20px;
+  font-size: 30px;
+}
+/* SỞ THÍCH */
+.sothich {
+  display: grid;
+  grid-template-columns: repeat((2, 1fr));
+  grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  column-gap: 5px;
+}
+.icon {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #4287f5;
+  padding: 15px;
+  color: #4287f5;
+  text-align: justify;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ic-telescope {
+  padding-top: 15px;
+  font-size: 30px;
+}
+.titlespecial {
+  grid-column: 1 / 4;
+}
+/* NGÔN NGỮ */
+.buf {
+  display: flex;
+  justify-content: space-between;
+  font-size: auto;
+
+  text-align: justify;
+}
+.language {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.icon-mic {
+  font-size: 30px;
+}
+.space {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+.space-xam {
+  background: grey;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+  white-space: nowrap;
+}
+.skill {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.icon-up-hand {
+  font-size: 30px;
+}
+/* CHỨNG CHỈ-GIẢI THƯỞNG */
+.container3 {
+  padding: 50px;
+  padding-top: 0px;
+  padding-right: 5px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 15px;
+  row-gap: 40px;
+  border-collapse: collapse;
+}
+.chungchi {
+  display: flex;
+  gap: 20px;
+}
+.chungchi1 {
+  border-right: 1px solid #d6c08d;
+}
+.chungchi2 {
+  margin-left: 10px;
+}
+
+.line {
+  content: "";
+  grid-column: 1 / -1;
+
+  height: 1px;
+  background: #d6c08d;
+}
+/* DỰ ÁN */
+.container4 {
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.temp {
+  padding: 15px;
+  width: 350px;
+  text-align: start;
+  border: 1px solid #eae8e4;
+}
+.fle {
+  display: flex;
+  gap: 20px;
+  width: 350px;
+  padding: 15px;
+  border: 1px solid #eae8e4;
+}
+.cbord {
+  background-color: #199cdb;
+  border-radius: 20px;
+  width: 40px;
+  height: auto;
+  text-align: center;
+}
+table,
+td {
+  margin-left: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border: 1px solid #eae8e4;
+  width: 350px;
+  text-align: left;
+  padding: 0.4em;
+}
+td {
+  border-left: none;
+}
+th {
+  vertical-align: top;
+  text-align: start;
+  padding: 6px;
+  height: 80px;
+}
+.container5 {
+  display: flex;
+  justify-content: center;
+
+  gap: 50px;
+  color: #83858a;
+}
+.container5 i {
+  color: #199cdb;
+}
+/* NÂNG CAO */
+.image2 {
+  z-index: 2;
+
+  transform: scale(7);
+  border-radius: 100%;
+  border: 1px solid #f5f4f2;
+}
+.section-content {
+  display: none;
+}
+/* viewmore none */
+.view-more {
+  display: none;
+}
+.border-dotted {
+  border-bottom: 2px solid cyan;
+  border-bottom-style: dotted;
+}
